@@ -1,4 +1,7 @@
-.container .navbar
+*
 {
-    background: #000;
+    background: rgb(1, 15, 27);
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
 }
