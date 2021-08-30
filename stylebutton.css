@@ -1,8 +1,114 @@
-*
+*,*:before,*:after
 {
-    background: rgb(1, 15, 27);
-    color: #fff;
+    padding: 0;
+    margin: 0;
+    box-sizing : border-box;
+}
+body
+{
+    background: #000;
+}
+/* CONFIGURAÇÃO GLOBAL DAS NAVLINKS */
+nav
+{
+    height: 150px;
+    width: 70vw;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+a
+{
+    position: relative;
     text-decoration: none;
-    list-style: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Poppins', sans-serif;
+    color: #a8a8a8;
+    padding: 0 5px;
+    transition: 00.4s;
+}
+/* NAV-MENU 1 */
+.efeito1
+{
+    background: #FF665A;
+}
+.efeito1 a{
+    color: #fff;
+}
+/* NAV-MENU 2 */
+/* NAV-MENU 3 */
+/* EFEITO 1 */
+.efeito1 a:after
+{
+    content:"";
+    border-radius: 15px;
+    position: absolute;
+    background: #FFF587;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.efeito1 a:hover
+{
+    color: #fff;
+    transition: 00.4s;
+}
+.efeito1 a:hover:after
+{
+    bottom: -5px;
+    opacity: 1;
+}
+/* EFEITO 2 */
+.efeito2 a:after
+{
+    content:"";
+    border-radius: 15px;
+    position: absolute;
+    background: rgb(207, 4, 247);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.efeito2 a:hover
+{
+    color:#fff;
+    font-size: 115%;
+    transition: 00.4s;
+}
+.efeito2 a:hover:after
+{
+    width: 100%;
+    opacity: 1;
+}
+/* EFEITO 3 */
+.efeito3 a:after
+{
+    content:"";
+    border-radius: 15px;
+    position: absolute;
+    background: rgb(61, 247, 4);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.efeito3 a:hover
+{
+    color:#fff;
+    font-size: 115%;
+    transition: 00.4s;
+}
+.efeito3 a:hover:after
+{
+    width: 100%;
+    opacity: 1;
 }
